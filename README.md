@@ -21,3 +21,9 @@ unique3d/
 ├── requirements.txt # 项目依赖
 ├── uni_requirements.txt # 额外依赖
 └── README.md # 项目说明
+
+## 个人运行代码
+(uni) tjut_shianzheng@user-NF5468M5:~/unique3d/Unique3D-main$ CUDA_VISIBLE_DEVICES=1 \
+> HF_HOME=/data/sazdata/.cache/huggingface \
+> GRADIO_TEMP_DIR=$(pwd)/app/gradio_temp \
+> python app/gradio_local.py --port 7860
